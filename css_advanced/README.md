@@ -13,7 +13,7 @@ This project is part of the **ALX Front-End Web Development curriculum**, specif
 - HTML5
 - Figma (design reference)
 - Font Awesome (for icons)
-- Fake image URLs or exported images from Figma
+- Exported images from Figma
 
 ## 🧱 Project Structure
 
@@ -54,15 +54,20 @@ The page includes the following main sections:
 .
 ├── index.html
 ├── README.md
+├── styles.css
 ├── images/
-│   ├── 1 (3).png
+│   ├── 1.png
+│   ├── 2.png
+│   ├── 3.png
+│   ├── 4.png
+│   ├── 5.png
 │   ├── 6.png
 │   ├── 7.png
 │   ├── 8.png
-│   ├── Bitmap.png
-│   ├── Bitmap (1).png
-│   ├── Bitmap (2).png
-│   ├── Bitmap (3).png
-│   ├── Bitmap (4).png
-│   ├── smile.svg
+│   ├── 9.png
+│   ├── logo.png
+│   ├── Object.png
+│   ├── play.png
+│   ├── rating.png
+│   ├── smile.png
 └── ...
