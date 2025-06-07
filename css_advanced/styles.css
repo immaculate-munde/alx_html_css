@@ -1,0 +1,369 @@
+/* General */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Header */
+.main-header {
+  background-color: transparent; /* Use transparent over the hero image */
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 320px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  white-space: nowrap;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+}
+.nav-links li {
+  flex-shrink: 0;
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 50px;
+  background-color: #fff;
+}
+
+header img {
+  height: 30px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('images/Object.png'); /* Path to your image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Optional dark overlay for better text visibility */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* Adjust darkness */
+  z-index: 0;
+}
+
+/* Ensure content appears above the overlay */
+.hero > div {
+  position: relative;
+  z-index: 1;
+  max-width: none;
+  width: 100%;
+}
+
+.hero-content {
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero span {
+  margin: 0 10px;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.hero-content button {
+  margin-top: 30px;
+  background-color: #C271FF;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Learn from the pros */
+.pros {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.pro {
+  max-width: 150px;
+  text-align: center;
+}
+
+.pro img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+
+
+.testimonial {
+  background-color: #C271FF;
+  color: #fff;
+  display: flex;
+  flex-direction: row; /* Forces horizontal layout */
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.testimonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.testimonial blockquote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: #e6dede;
+  
+}
+.purple-bg {
+  background-color: #8e44ad; /* or any purple shade you prefer */
+  color: white; /* optional: makes text readable */
+  width: 100%;
+  padding: 60px 20px;
+  text-align: left;
+}
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.black-text {
+  color: black;
+  font-weight: normal;
+}
+
+.purple-bold {
+  color: purple;
+  font-weight: bold;
+}
+
+
+
+.tutorials {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.tutorial {
+  width: 250px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.membership-features {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.feature {
+  width: 200px;
+  text-align: center;
+}
+.stars {
+    display: flex;
+    gap: 4px;
+    margin: 5px 0;
+}
+
+.stars .purple {
+    color: #C271FF; /* purple */
+}
+
+.stars i:not(.purple) {
+    color: #D8D8D8; /* light gray for uncolored stars */
+}
+.duration {
+    color: #C271FF; /* purple color */
+    font-weight: bold; /* optional for emphasis */
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.video-container img:first-child {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.membership button {
+  background-color: #C271FF;
+  border: none;
+  padding: 15px 40px;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 16px;
+}
+section:nth-of-type(4) {
+  background-color: #071629;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+/* FAQ Section */
+.faq {
+  background-color: #f5f5f5;
+  padding: 60px 80px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.faq-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  gap: 40px 60px;
+}
+
+.faq-item {
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #071629;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  flex-wrap: wrap;
+}
+
+.footer-container img {
+  height: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #C271FF; /* matches your brand purple */
+}
+
+footer p {
+  font-size: 14px;
+  color: #aaa;
+  margin-top: 10px;
+}
+
+
+
