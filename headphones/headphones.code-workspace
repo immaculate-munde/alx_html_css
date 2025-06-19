@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Downloads/docs"
+		},
+		{
+			"path": "../../Downloads/Archive"
+		},
+		{
+			"path": "../../Downloads/doc"
+		},
+		{
+			"path": "../../Downloads/Spin-Cycle-OT"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "headphones"
+	}
+}
