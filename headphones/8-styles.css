@@ -167,6 +167,7 @@ body {
 /* Our results section with pentagons */
 .our-results {
   text-align: center;
+  background: url("headphones_hero_2.jpg") no-repeat center center/cover;
   padding: 4rem 2rem;
   max-width: var(--max-width);
   margin: 0 auto;
