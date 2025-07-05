@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../OneDrive/Desktop/holberton/holberton_school-icon/fonts"
+		},
+		{
+			"path": "../../OneDrive/Desktop/task2_headphones/fonts"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "headphones"
+	}
+}
